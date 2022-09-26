@@ -1,0 +1,9 @@
+IF 
+Global("X3LovedOne","GLOBAL",6) 
+THEN
+  RESPONSE #100
+    CutSceneId("X3NLOVE")
+    CreateVisualEffectObject("SPFLESHS",Myself)
+    Wait(1)
+    ChangeAnimation("HGWRA02")
+END

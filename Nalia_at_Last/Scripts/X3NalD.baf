@@ -1,0 +1,51 @@
+
+IF 
+	RealGlobalTimerExpired("X3NaliaToBLoveTimer","GLOBAL")
+	Global("PGNaliaRomanceActive","GLOBAL",1)	
+    IsValidForPartyDialogue(Myself)
+	IsValidForPartyDialogue(Player1)
+    See(Player1)
+    CombatCounter(0)
+    !See([ENEMY])
+	Global("X3NaliaLove","GLOBAL",5)
+THEN RESPONSE #100 
+	//PlaySong(0)
+	IncrementGlobal("X3NaliaLove","GLOBAL",1)
+	RealSetGlobalTimer("X3NaliaToBLoveTimer","GLOBAL",3200)
+	StartDialogueNoSet(Player1)
+END 	
+
+
+IF 
+	Global("PGNaliaRomanceActive","GLOBAL",1)	
+    IsValidForPartyDialogue(Myself)
+	IsValidForPartyDialogue(Player1)
+    See(Player1)
+    CombatCounter(0)
+    !See([ENEMY])
+	Global("X3NaliaLove","GLOBAL",13)
+THEN RESPONSE #100 
+	//PlaySong(0)
+	IncrementGlobal("X3NaliaLove","GLOBAL",14)
+	StartDialogueNoSet(Player1)
+END 	
+
+//Saradush Post Talk Arnel/De'arnise
+//Saradush Post Talk 
+IF 
+	Global("SaradushSacked","GLOBAL",1)
+	OR(2)
+	Global("PGNaliaRomanceActive","GLOBAL",2)
+	Global("NaliaRomanceActive","GLOBAL",2)	
+    IsValidForPartyDialogue(Myself)
+	IsValidForPartyDialogue(Player1)
+    See(Player1)
+    CombatCounter(0)
+    !See([ENEMY])
+	Global("PGNaliaLove","GLOBAL",11)
+THEN RESPONSE #100 
+	//PlaySong(0)
+	IncrementGlobal("PGNaliaLove","GLOBAL",1)
+	RealSetGlobalTimer("X3NaliaToBLoveTimer","GLOBAL",3200)
+	StartDialogueNoSet(Player1)
+END 	

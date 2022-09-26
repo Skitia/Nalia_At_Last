@@ -1,0 +1,133 @@
+BACKUP ~tobNalia\Backup~
+AUTHOR ~Skitia https://skitias-stories.com/contact.php~
+VERSION ~Beta~
+README ~Nalia_at_Last/Nalia_at_Last-readme.txt~
+AUTO_TRA ~%MOD_FOLDER%/Tra/%s~
+
+ALWAYS
+
+  ACTION_IF GAME_IS ~eet~ BEGIN
+    OUTER_SET bg2_chapter = 12
+
+  END ELSE BEGIN
+    OUTER_SET bg2_chapter = 0
+
+  END
+  OUTER_FOR (i=1; i<=10; i=i+1) BEGIN
+    OUTER_SET bg2_chapter = bg2_chapter + 1
+    OUTER_SPRINT name_source ~bg2_chapter_%i%~
+    OUTER_SET EVAL ~%name_source%~ = bg2_chapter
+  END
+  
+
+
+ 
+
+/* EET continuous game: disable additional fate spirit summonings */
+  ACTION_IF NOT GAME_IS ~eet~ BEGIN
+    OUTER_SPRINT ~New_ToB_Game~ ~~
+  END
+
+  ACTION_IF GAME_IS ~eet~ BEGIN
+    OUTER_SPRINT ~New_ToB_Game~ ~Global("NEWGAME_TOB","GLOBAL",1)~
+  END
+
+
+  ACTION_IF GAME_IS ~bg2~ THEN BEGIN
+    INCLUDE ~%MOD_FOLDER%/lib/ids.tph~
+    CLEAR_IDS_MAP
+  END
+
+END 
+
+
+LANGUAGE ~English~
+         ~English~
+         ~%MOD_FOLDER%/Tra/English/setup.tra~
+		
+
+
+
+
+BEGIN @0
+
+	
+//Wraith Events 
+EXTEND_BOTTOM ~cut218g.bcs~ ~%MOD_FOLDER%/scripts/X3NW2.baf~
+
+//Cutscenes
+COMPILE	EVALUATE_BUFFER 
+~%MOD_FOLDER%/Scripts/X3NW1.baf~
+
+//Dialogue
+COMPILE ~%MOD_FOLDER%/dialogue/X3Nal25.d~
+USING   ~%MOD_FOLDER%/tra/%s/X3Nal25.tra~
+
+COMPILE EVALUATE_BUFFER ~%MOD_FOLDER%/dialogue/FATESP.d~
+USING   ~%MOD_FOLDER%/tra/%s/FATESP.tra~
+
+//New Epilogues
+COPY_EXISTING ~NALIAND.2DA~ ~override/NALIARD.2da~
+REPLACE ~99999~ @3
+
+COPY_EXISTING ~NALIAND.2DA~ ~override/NALIAMA.2da~
+REPLACE ~99999~ @4
+
+COPY_EXISTING ~NALIAND.2DA~ ~override/NALIARC.2da~
+REPLACE ~99999~ @5
+
+COPY_EXISTING ~NALIAND.2DA~ ~override/NALIADA.2da~
+REPLACE ~99999~ @6
+
+COPY_EXISTING ~NALIAND.2DA~ ~override/NALIART.2da~
+REPLACE ~99999~ @7
+
+
+//Scripts 
+  EXTEND_BOTTOM ~NALI25.bcs~ ~%MOD_FOLDER%/Scripts/X3Nal25.baf~
+  EXTEND_BOTTOM ~NALIAD.bcs~ ~%MOD_FOLDER%/Scripts/X3NalD.baf~
+//Set up Epilogues 
+EXTEND_TOP ~AR6200.bcs~ ~%MOD_FOLDER%/Scripts/ar6200.baf~
+//Crossmod Item 
+COPY_EXISTING ~%MOD_FOLDER%/Items/x3RingN.itm~ ~override/x3RingN.itm~
+SAY NAME1 @1
+SAY NAME2 @1
+SAY DESC @2 
+    LPF ADD_ITEM_EQEFFECT
+    INT_VAR
+      opcode = 319
+	  target = 1
+	  timing = 2
+	  parameter2 = 11
+	  power = 1
+	  special = RESOLVE_STR_REF (9102)
+	STR_VAR
+	  resource = NALIA
+END
+
+BEGIN @8
+SUBCOMPONENT @9
+
+
+	COPY_EXISTING ~sw1h01.itm~ ~override/bg1npcmusic.g3~
+
+	MKDIR ~music/blank~
+	COPY ~%MOD_FOLDER%/Music/blank.mus~ ~music~
+		~%MOD_FOLDER%/Music/blank.acm~ ~music/blank/blanka.acm~
+
+	COPY_EXISTING ~songlist.2da~ ~override~
+  		SET_2DA_ENTRY 0 0 2 ~2DA_V1.0~
+  		SET_2DA_ENTRY 0 1 2 ~~
+  		SET_2DA_ENTRY 0 0 2 ~IDOBEK Name~
+  		SET_2DA_ENTRY 1 2 3 ~Blank.mus~
+		SET_2DA_ENTRY 1 1 3 ~BLANK~
+  		SET_2DA_ENTRY 0 0 3 ~~
+  		REPLACE_TEXTUALLY CASE_INSENSITIVE ~2DA_V1.0~ ~2DA V1.0~
+
+LAF HANDLE_AUDIO
+  STR_VAR
+    audio_path = ~%MOD_FOLDER%/Music~
+    oggdec_path = ~%MOD_FOLDER%/Music~
+    sox_path = ~%MOD_FOLDER%/Music~
+END
+
