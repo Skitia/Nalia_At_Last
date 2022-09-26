@@ -8,6 +8,8 @@
 
 --------------------------------------------------------------------------
 
+NOTE: This is a Beta Build, and bugs are expected. Please share on the Beamdog Forums!
+
 Nalia At Last is a very long awaited romance for Throne of Bhaal.
 
 How the mod plays out will depend on if you have the De'Arnise Romance installed, the Nalia Romance installed, or neither.
