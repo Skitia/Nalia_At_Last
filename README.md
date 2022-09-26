@@ -1,117 +1,69 @@
-# Nalia At Last: A Romance for ToB
-                              VERSION Beta
-              A Skitia Project
-	              https://skitias-stories.com/
+
+![image](https://user-images.githubusercontent.com/57140485/192360804-b27f1a19-a2c5-4020-b324-07b918ec50cb.png)
 
 
---------------------------------------------------------------------------
-
+Mod Overview:
 Nalia At Last is a very long awaited romance for Throne of Bhaal. It is a standalone Nalia romance for ToB with a romance branch to continue a romance from De'Arnise Romance or Arnel's Nalia Romance
 
 How the mod plays out will depend on if you have the De'Arnise Romance installed, the Nalia Romance installed, or neither.
 
 If for some maniacal reason you have both installed, the Nalia Romance will be assumed since that one has you married at the end.
 
-For non-EET games, you'll have an additional option to summon a romanced De'Arnise Nalia or the other Nalia Romance. 
-Otherwise you'll have to summon standard Nalia and romance her.
+For non-EET games, you'll have an additional option to summon a romanced De'Arnise Nalia or the other Nalia Romance. Otherwise you'll have to summon standard Nalia and romance her.
 
-Installation:
-Order largely doesn't matter. Install as you would any other weidu Mod.
+Mod Details:
+-A small friendship track.
+-2 romance tracks, one standalone, one dependent on having either the De'Arnise or the Nalia romance installed.
+-5 new Epilogues.
+-Flirts.
+-A few new interjects to match the standard romance interjections of the other Bioware NPCs.
 
-This upcoming project intends to provide a conclusion to the romances started by both De'Arnise and Nalia Romance.  Talks will vary based on which content you are using. 
-This mod is also standalone, though this mod will be richer if you are using either the De'Arnise romance mod or the Nalia romance mod. Otherwise, the romance starts from ground 0 and must build first.
+Romance Qualifications:
+Standalone:
+Male
+Not in any other romance, or De'Arnise/Arnel's Nalia Romance Unfinished/Ongoing (Variable = 1)
+Non-Standalone
+De'Arnise or Arnel's Nalia Romance Finished/Active (Variable = 2)
+If you are evil, have low reputation, or give certain answers to the Solar as the story progresses, expect the romance to eventually break, as she'll feel you are corrupting her and too dangerous to get closer too. As a warning, the Non-Standalone romance is a bit bumpy, if things seem over, there might still be hope.
 
-GAMEPLAY NOTES
+Current Status: Beta
+-This is basically done. All that is left is polishing, some rewrites where the dialogue isn't quite right, grammar corrections, etc. It's not 100% tested, and there may be bugs. Current Events delay my original estimates, so I want to release something now.
 
-There are two Romance Tracks, Standalone and the De'Arnise/Arnel Branch. The Nalia relationship is largely treated the same in the second branch, bar a few distinctions of the romance that occured 
-in Arnel's mod, and some dialogue differences.
+Some probable questions and answers to them:
 
-If you intend to go through the Standalone Romance, note the following requirements:
--Male
--Not in any other Bioware, Beamdog, Skitia, or Artisan romance. (Petsy and Yvette from Lava are checked as well.)
+Q: Where can I get support?
+A: This is the main support thread. You can also message me on my discord channel, here. I have a contact form on my website as well.
 
-However, the following will eventually doom the romance:
--Low Reputation
--Evil Alignment
--Responses to the Solar that tend towards corruption
+Q: The style seems different from Arnel/JCompton
+A: Early on I decided to have Arnel/JCompton's Romances merge into one romance branch. They are the *same* Nalia, so it was probable she would go under similiar development and crisis. I wrote for what I felt that Nalia would be, rather than looking too much back on the other two. As an aside, I found similiarities between Nalia and Emily, so it was a challenge to make sure Nalia was Nalia. Rewrites and polishing will aim to make sure there is no overlap in distinction. Lastly, Nalia in ToB is different than SoA, and having a different author is refreshing in a way as it can help show that shift.
 
-Nalia will view you as a danger to herself and will cut the romance to protect herself.
+Q: Can I translate this mod?
+A: This mod is traified for translating. On release, it will largely be stable and no further content is planned to be added. There is some Crossmod with SkitiaNPCs for its future update, but those pieces are already in place in the traification. Just send me the translated text and I can add it to the mod.
 
-If you intend to go through the De'Arnise/Arnel Romance branch, the above will also doom the romance!
-Note also that the romance has a bit of a bump after a few talks for the De'Arnise/Arnel Branch. You'll have to plow through Nalia's development before things will smooth through.
+Q: What are the differences between a continuation from Arnel's and a continuation from De'Arnise?
+A: There are mostly text differences, I.E., acknowledgements of marriage from Arnel. There is a branch of two of dialogue that are unique, but they otherwise follow the same branch. I would pick your favorite.
 
-Some talks are triggered normally, while others occur at rest or after rest. Some await until certain events in the story, such as Saradush being sacked, or certain dialogues with the Solar.
+Q: Nalia is OOC! Can you fix it?
+A: Let me know where, and I'll polish it out. This is still in beta, and I've not gotten a chance to go over the writing a third or fourth time yet. I try to stay in spirit of the character.
 
+Q: What is the content/suitably rating.
+A: This is very T. One flirt can get a bit spicy, but it's still T and probably tamer than the De'Arnise Romance or Skitia's NPCs.
 
-
-FLIRTING
-
-Like the De'Arnise Nalia, Nalia At Last also has flirting for Nalia. 
-It starts after a few talks for the Standalone Branch, and is available right away for the De'Arnise/Arnel Branch.
-She also initiates her own flirts. You can stop the initiating in the same way you flirt with her, by using the talk icon and clicking on her or her portrait.
-
-FAQ (contains spoilers)
-
-Q: Help! The romance appears to be stuck! What did I do wrong?
-
-A: You should probably rest, or wait on the story. If you're worried you broke it, check if PGNaliaRomanceActive is at 3. 
-If your reputation is lower than 10, you are evil, or you gave certain answers to the Solar (One bad answer won't hurt you though), it can also break.
-
-Q: Why is this readme in the style of De'Arnise?
-
-A: As a wink and nod to the greatness that came before.
-
-Q: Are there new epilogues?
-
-A: Yes, 5 in total. I tried not to veer too much from Nalia's ambitions, as I felt they were still core to her.
-
-A: Why is this in Beta?
-
-Q: Because the release date is technically not until September 30th. 
-
-Version History:
-
-Beta: Beta
+Q: When will this mod leave Beta:
+A: When the storm passes and I can work on it again. It just needs a few more days of love. I want to release it now because I am also getting married in just a couple of weeks, and there's a chance that the little window of time I have may be no time at all. (Also if something happens to me, it would be a tragedy if it never got released after all this time!)
 
 CREDITS
 
-Skitia 								For this mod, coding, dialogue, and everything else included.
+Skitia For this mod, coding, dialogue, and everything else included.
 
-Arnel 							   For the original Arnel Nalia Romance, and the variable.
+Arnel For the original Arnel Nalia Romance, and the variable.
 
-Jason Compton & Kulyok            For the original De'Arnise Romance, and the variable!
+Jason Compton & Kulyok For the original De'Arnise Romance, and the variable.
 
 Music credits: Me. Created with Sibelius and East West Symphonic Music Library.
 
-Thanks to our beta testers: Lord Ernie, gertjanvh, purplecloud, shiroryu,
-Darius, Niaroanc, Adahn, magrat, Kanain
+Please do not re-upload, republish, sell, compile, or redistribute this mod without permission!
 
-
-Special thanks go to the countless people who patiently reminded me that I
-should have finished this mod years ago, but still eagerly awaited the final
-result. Sorry about that, everyone.
-
-Double special thanks to Kulyok, for rescuing the mod from development hell.
-
-Technical elements, including scripts, are Copyright © 2002-2007 Olga
-Silaeva and Jason Compton. Audiovisual elements are Copyright © 2002-2007 Jason
-Compton.
-
-Nalia At Last is not developed, supported, or endorsed by Beamdog
-
-
-REDISTRIBUTION NOTE: Just like the de'Arnise Romance, Nalia At Last was created to be freely enjoyed by
-all Baldur's Gate 2 players. However, this program may not be sold,
-published, compiled or redistributed in any form without the consent of
-the author.
-
-
-LINKS
-
-https://weidu.org/:                 Home of WeiDU
-
-https://skitia-stories.com:        Home of this mod, and other fine
-                                      projects!
 
 
 
