@@ -1324,7 +1324,7 @@ END
 CHAIN NALIA25A WaitHere 
 @37
 DO ~MoveToPointNoInterrupt([1483.1540])
-Face(0)~
+Face(S)~
 EXIT 
 
 CHAIN IF ~Global("NaliaSummoned","GLOBAL",2)Global("NaliaRomanceActive","GLOBAL",2)~ THEN NALIA25A NaliaMarriedMeetAgain
@@ -1392,12 +1392,11 @@ EXTERN SARPRO01 12
 
 // Volo's obligatory interjection in Saradush.
 
-A_T_T SARVOLO 30 ~!Global("NaliaRomanceActive","GLOBAL",2)!Global("PGNaliaRomanceActive","GLOBAL",2)~ DO 0
+A_T_T SARVOLO 9 ~!Global("NaliaRomanceActive","GLOBAL",2)!Global("PGNaliaRomanceActive","GLOBAL",2)~ DO 39
 
-A_T_T SARVOLO 30 ~!Global("NaliaRomanceActive","GLOBAL",2)!Global("PGNaliaRomanceActive","GLOBAL",2)~ DO 1
 
-EXTEND_BOTTOM SARVOLO 30
-IF ~InParty("NALIA")OR(2)Global("NaliaRomanceActive","GLOBAL",2)Global("PGNaliaRomanceActive","GLOBAL",2)~ EXTERN SARVOLO NaliaVoloBio
+EXTEND_BOTTOM SARVOLO 9
++ ~InParty("NALIA")OR(2)Global("NaliaRomanceActive","GLOBAL",2)Global("PGNaliaRomanceActive","GLOBAL",2)~ + 71504 + NaliaVoloBio
 END
 
 CHAIN SARVOLO NaliaVoloBio
