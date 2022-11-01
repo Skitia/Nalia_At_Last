@@ -138,7 +138,7 @@ Global("PGNaliaLove","GLOBAL",0)
 	Global("PGNaliaRomanceActive","GLOBAL",2)
 	Global("X3NaliaLove","GLOBAL",0)
 THEN RESPONSE #100 
-RealSetGlobalTimer("X3NaliaToBLoveTimer","GLOBAL",19)
+RealSetGlobalTimer("X3NaliaToBLoveTimer","GLOBAL",2700)
 SetGlobal("PGNaliaLove","GLOBAL",1)
 END
 
@@ -192,7 +192,7 @@ IF
 	Global("X3NaliaFriendship","GLOBAL",4)	
 	Global("X3NaliaFriendship","GLOBAL",6)	
 THEN RESPONSE #100 
-	RealSetGlobalTimer("X3NaliaToBLoveTimer","GLOBAL",21)
+	RealSetGlobalTimer("X3NaliaToBLoveTimer","GLOBAL",1500)
 	StartDialogueNoSet(Player1)	
 END 
 
@@ -217,7 +217,7 @@ IF
 THEN RESPONSE #100 
 	//Play(0)
 	//PlaySound()	
-	RealSetGlobalTimer("X3NaliaToBLoveTimer","GLOBAL",19)
+	RealSetGlobalTimer("X3NaliaToBLoveTimer","GLOBAL",2700)
 	StartDialogueNoSet(Player1)	
 END 
 
