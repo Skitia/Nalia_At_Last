@@ -39,7 +39,7 @@ InParty(Myself)
 Global("PGNaliaRomanceActive","GLOBAL",1)
 Global("X3NaliaLove","GLOBAL",0)
 THEN RESPONSE #100 
-RealSetGlobalTimer("X3NaliaToBLoveTimer","GLOBAL",19)
+RealSetGlobalTimer("X3NaliaToBLoveTimer","GLOBAL",2400)
 SetGlobal("X3NaliaLove","GLOBAL",1)
 END
 
