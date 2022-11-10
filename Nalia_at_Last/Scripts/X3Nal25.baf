@@ -192,7 +192,6 @@ IF
 	Global("X3NaliaFriendship","GLOBAL",4)	
 	Global("X3NaliaFriendship","GLOBAL",6)	
 THEN RESPONSE #100 
-	RealSetGlobalTimer("X3NaliaToBLoveTimer","GLOBAL",1500)
 	StartDialogueNoSet(Player1)	
 END 
 
@@ -217,7 +216,6 @@ IF
 THEN RESPONSE #100 
 	//Play(0)
 	//PlaySound()	
-	RealSetGlobalTimer("X3NaliaToBLoveTimer","GLOBAL",2700)
 	StartDialogueNoSet(Player1)	
 END 
 
