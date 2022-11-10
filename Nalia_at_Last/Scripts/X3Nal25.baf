@@ -231,10 +231,10 @@ IF
     CombatCounter(0)
     !See([ENEMY])
 	OR(2)
-	Global("PGNaliaLove","GLOBAL",1)
-	Global("PGNaliaLove","GLOBAL",9)	
+	Global("X3NaliaLove","GLOBAL",1)
+	Global("X3NaliaLove","GLOBAL",9)	
 THEN RESPONSE #100 
-	IncrementGlobal("PGNaliaLove","GLOBAL",1)	
+	IncrementGlobal("X3NaliaLove","GLOBAL",1)	
 END 
 
 //Love Talk 2 StandAlone 
@@ -247,9 +247,9 @@ IF
     See(Player1)
     CombatCounter(0)
     !See([ENEMY])
-	Global("PGNaliaLove","GLOBAL",11)
+	Global("X3NaliaLove","GLOBAL",3)
 THEN RESPONSE #100 
-	IncrementGlobal("PGNaliaLove","GLOBAL",1)	
+	IncrementGlobal("X3NaliaLove","GLOBAL",1)	
 END 
 
 //Love Talk 4 StandAlone 
@@ -262,9 +262,9 @@ IF
     See(Player1)
     CombatCounter(0)
     !See([ENEMY])
-	Global("PGNaliaLove","GLOBAL",11)
+	Global("X3NaliaLove","GLOBAL",7)
 THEN RESPONSE #100 
-	IncrementGlobal("PGNaliaLove","GLOBAL",1)	
+	IncrementGlobal("X3NaliaLove","GLOBAL",1)	
 END 
 
 //Love Talk 6 StandAlone 
@@ -277,9 +277,9 @@ IF
     See(Player1)
     CombatCounter(0)
     !See([ENEMY])
-	Global("PGNaliaLove","GLOBAL",11)
+	Global("X3NaliaLove","GLOBAL",11)
 THEN RESPONSE #100 
-	IncrementGlobal("PGNaliaLove","GLOBAL",1)	
+	IncrementGlobal("X3NaliaLove","GLOBAL",1)	
 END 
 
 //Love Talk 8 De'Arnise/Arnel
