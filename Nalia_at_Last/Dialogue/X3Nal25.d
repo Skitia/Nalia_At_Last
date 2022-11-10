@@ -1,7 +1,7 @@
 //Friendship Conversation 1 
 CHAIN IF ~Global("X3NaliaFriendship","GLOBAL",2)~ THEN NALIA25J Friendship1 
 @103
-DO ~IncrementGlobal("X3NaliaFriendship","GLOBAL",1)~
+DO ~RealSetGlobalTimer("X3NaliaToBLoveTimer","GLOBAL",1500)IncrementGlobal("X3NaliaFriendship","GLOBAL",1)~
 = @104
 END 
 ++ @105 + F1.1A
@@ -48,7 +48,7 @@ EXIT
 //Friendship Conversation 2
 CHAIN IF ~Global("X3NaliaFriendship","GLOBAL",4)~ THEN NALIA25J Friendship2
 @121
-DO ~IncrementGlobal("X3NaliaFriendship","GLOBAL",1)~
+DO ~RealSetGlobalTimer("X3NaliaToBLoveTimer","GLOBAL",1500)IncrementGlobal("X3NaliaFriendship","GLOBAL",1)~
 END 
 ++ @122 + F2.1A
 ++ @123 + F2.1B
@@ -82,7 +82,7 @@ EXIT
 //Friendship 3
 CHAIN IF ~Global("X3NaliaFriendship","GLOBAL",6)~ THEN NALIA25J Friendship3
 @136
-DO ~IncrementGlobal("X3NaliaFriendship","GLOBAL",1)~
+DO ~RealSetGlobalTimer("X3NaliaToBLoveTimer","GLOBAL",1500)IncrementGlobal("X3NaliaFriendship","GLOBAL",1)~
 END 
 ++ @137 DO ~SetGlobal("X3NaliaMore","LOCALS",1)~ + F3.2
 ++ @138 + F3.2
@@ -214,7 +214,7 @@ EXIT
 
 CHAIN IF ~Global("X3NaliaLove","GLOBAL",2)~ THEN NALIA25J StandaloneLove1
 @184
-DO ~IncrementGlobal("X3NaliaLove","GLOBAL",1)~
+DO ~RealSetGlobalTimer("X3NaliaToBLoveTimer","GLOBAL",2700)IncrementGlobal("X3NaliaLove","GLOBAL",1)~
 END 
 ++ @185 + SL1.Home
 ++ @186 + SL1.Mother
@@ -292,8 +292,8 @@ EXIT
 
 //Standalone Love 2
 CHAIN IF ~Global("X3NaliaLove","GLOBAL",4)~ THEN NALIA25J SL2 
-@216
-DO ~IncrementGlobal("X3NaliaLove","GLOBAL",1)~
+@216 //~That wraith impersonating your father's form. It wasn't really him, but it felt real. Even I was a bit spooked.~
+DO ~RealSetGlobalTimer("X3NaliaToBLoveTimer","GLOBAL",2700)IncrementGlobal("X3NaliaLove","GLOBAL",1)~
 END 
 ++ @217 + SL2.Cold 
 ++ @218 + SL2.Tainted
@@ -348,7 +348,7 @@ EXIT
 //STandalone Love 3 - PreRest
 CHAIN IF ~Global("X3NaliaLove","GLOBAL",6)~ THEN NALIA25J SL3 
 @241
-DO ~IncrementGlobal("X3NaliaLove","GLOBAL",1)~
+DO ~RealSetGlobalTimer("X3NaliaToBLoveTimer","GLOBAL",2700)IncrementGlobal("X3NaliaLove","GLOBAL",1)~
 END 
 ++ @242 + SL3.1
 ++ @243 + SL3.3
@@ -427,7 +427,7 @@ EXTERN NALIA25J SL3.2
 
 CHAIN IF ~Global("X3NaliaLove","GLOBAL",8)~ THEN NALIA25J SL4
 @274 
-DO ~IncrementGlobal("X3NaliaLove","GLOBAL",1)~
+DO ~RealSetGlobalTimer("X3NaliaToBLoveTimer","GLOBAL",2700)IncrementGlobal("X3NaliaLove","GLOBAL",1)~
 = @275  
 END 
 ++ @276 + SL4.2
@@ -480,7 +480,7 @@ EXIT
 //Standalone 5
 CHAIN IF ~Global("X3NaliaLove","GLOBAL",10)~ THEN NALIA25J SL5 
 @295 
-DO ~IncrementGlobal("X3NaliaLove","GLOBAL",1)~
+DO ~RealSetGlobalTimer("X3NaliaToBLoveTimer","GLOBAL",2700)IncrementGlobal("X3NaliaLove","GLOBAL",1)~
 END 
 ++ @296 + SL5.1
 ++ @297 + SL5.1
@@ -547,6 +547,7 @@ EXIT
 //Standalone Love 6
 CHAIN IF ~Global("X3NaliaLove","GLOBAL",12)~ THEN NALIA25J SL6 
 @326
+DO ~RealSetGlobalTimer("X3NaliaToBLoveTimer","GLOBAL",2700)IncrementGlobal("X3NaliaLove","GLOBAL",1)~
 = @327
 END 
 ++ @328 + SL6.1
@@ -722,7 +723,7 @@ EXIT
 //Arnel's Nalia and DeARnise use this branch.
 CHAIN IF ~Global("PGNaliaLove","GLOBAL",2)~ THEN NALIA25J LoveTalk1
 @394 
-DO ~IncrementGlobal("PGNaliaLove","GLOBAL",1)~
+DO ~RealSetGlobalTimer("X3NaliaToBLoveTimer","GLOBAL",3200)IncrementGlobal("PGNaliaLove","GLOBAL",1)~
 END 
 ++ @395 + LT.1
 ++ @396 + LT.1
@@ -779,7 +780,7 @@ EXIT
 //Love Talk 2
 CHAIN IF ~Global("PGNaliaLove","GLOBAL",4)~ THEN NALIA25J LoveTalk2
 @415 
-DO ~IncrementGlobal("PGNaliaLove","GLOBAL",1)~
+DO ~RealSetGlobalTimer("X3NaliaToBLoveTimer","GLOBAL",3200)IncrementGlobal("PGNaliaLove","GLOBAL",1)~
 = @416
 END 
 ++ @417 + LT2.2A
@@ -830,6 +831,7 @@ EXIT
 //Love Talk 3
 CHAIN IF ~Global("PGNaliaLove","GLOBAL",6)~ THEN NALIA25J LoveTalk3 
 @438 
+DO ~RealSetGlobalTimer("X3NaliaToBLoveTimer","GLOBAL",3200)IncrementGlobal("PGNaliaLove","GLOBAL",1)~
 END 
 ++ @439 + L3.1
 ++ @440 + L3.1
@@ -883,7 +885,7 @@ EXIT
 //LoveTalk 4
 CHAIN IF ~Global("PGNaliaLove","GLOBAL",8)~ THEN NALIA25J LoveTalk4
 @458
-DO ~IncrementGlobal("PGNaliaLove","GLOBAL",1)~
+DO ~RealSetGlobalTimer("X3NaliaToBLoveTimer","GLOBAL",3200)IncrementGlobal("PGNaliaLove","GLOBAL",1)~
 END 
 +~Global("NaliaRomanceActive","GLOBAL",2)~+ @459 + L4.Arnel //Arnel 
 +~Global("PGNaliaRomanceActive","GLOBAL",2)~+ @459 + L4.Arnise
@@ -942,7 +944,7 @@ EXIT
 //Love Talk 5
 CHAIN IF ~Global("PGNaliaLove","GLOBAL",10)~ THEN NALIA25J LoveTalk5
 @482 
-DO ~IncrementGlobal("PGNaliaLove","GLOBAL",1)~
+DO ~RealSetGlobalTimer("X3NaliaToBLoveTimer","GLOBAL",3200)IncrementGlobal("PGNaliaLove","GLOBAL",1)~
 END 
 IF ~Global("X3NaliaIgnore","LOCALS",1)~ EXTERN NALIA25J L5.Ignore
 IF ~!Global("X3NaliaIgnore","LOCALS",1)~ EXTERN NALIA25J L5.Begin 
@@ -1036,7 +1038,7 @@ EXIT
 //Love Talk 6 - Pre Rest 
 CHAIN IF ~Global("PGNaliaLove","GLOBAL",12)~ THEN NALIA25J LoveTalk6 
 @517
-DO ~IncrementGlobal("PGNaliaLove","GLOBAL",1)~
+DO ~RealSetGlobalTimer("X3NaliaToBLoveTimer","GLOBAL",3200)IncrementGlobal("PGNaliaLove","GLOBAL",1)~
 END 
 ++ @518 + L6.1
 ++ @519 + L6.3 
