@@ -1,5 +1,21 @@
 //Appends to Nalia25.bcs
 
+//Debug Fix
+IF 
+InParty(Myself)
+Global("X3EETDebug","GLOBAL",0)
+THEN RESPONSE #100 
+SetGlobal("X3EETDebug","GLOBAL",1)
+ SetDialogue("NALIA25J")
+END
+
+IF 
+InParty(Myself)
+Global("X3Test","GLOBAL",2)
+THEN RESPONSE #100 
+SetGlobal("X3Test","GLOBAL",0)
+ SetDialogue("NALIA25J")
+END 
 //Set Nalia Romance ToB active if either SoA Romance is active.
 IF
 InParty(Myself)
