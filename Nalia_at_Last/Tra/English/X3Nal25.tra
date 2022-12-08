@@ -100,7 +100,7 @@
 @98  = ~And if you stay with me,  I will make sure our life is a good one, doing great things together, being the best wife I can be until the end of our days.~
 @99  = ~And if you stay with me, I will make sure our life is a good one, doing great things together, until the end of our days.~
 @100 = ~But if you decide to go, I will never forget you. I will remember you always, and hope you are doing great things with the power you have earned.~
-@101 = ~Good luck up there, <CHARNAME>. I...I will miss you. I know you will...do great and wonderful things...without me.~
+@101 = ~Good luck up there, <CHARNAME>. I...I will miss you. But I know you will do great and wonderful things.~
 @102 = ~You...You're staying? This is wonderful! Together you and I... we will live so happy, my love.~
 //Friendship 1 
 @103 = ~When things seem to be over, something new begins with you, doesn't it? I can barely remember when things were more slow-paced and peaceful.~
@@ -646,7 +646,7 @@
 @621 = ~(With one hand holding her spellbook open, the other gently entangles itself around your arm, and you find yourself becoming her bookrest.)~
 @622 = ~I love you, <CHARNAME>. I just wanted to tell you. (She gently kisses your cheek and returns to her spot in the formation.)~
 @623 = ~(Nalia gives you a smile full of love and warmth, and she leans into you gently for comfort.)~
-@624 = ~This feels nice and right. I just wish there was more time. and less responsiblitiy sometimes.~
+@624 = ~This feels nice and right. I just wish there was more time. and less responsibility sometimes.~
 @625 = ~I don't understand. I can cast spells, I can win battles against the greatest monsters. But I cannot cook to save my life!~
 @626 = ~Your last meal wasn't bad at all.~
 @627 = ~We can't be good at everything, Nalia.~
@@ -817,3 +817,4 @@
 @792 = ~(After the pent up energy releases, you soak ointments and soaps on eachother's skins, as she gently kisses her neck and shoulder.)~
 @793 = ~(Regretfully, the water begins to run cold, and with a sigh, Nalia jumps out and moves to the screen to redress.)~
 @794 = ~I promise to stay by your side, <CHARNAME>, no matter how grim things get. I won't let my doubts shake me again.~
+@795 = ~I feel as if I should see this through and accept my birthright.~

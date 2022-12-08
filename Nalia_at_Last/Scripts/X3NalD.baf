@@ -46,6 +46,5 @@ IF
 THEN RESPONSE #100 
 	//PlaySong(0)
 	IncrementGlobal("PGNaliaLove","GLOBAL",1)
-	RealSetGlobalTimer("X3NaliaToBLoveTimer","GLOBAL",3200)
 	StartDialogueNoSet(Player1)
 END 	

@@ -1221,11 +1221,6 @@ CHAIN NALIA25J L9.1
 EXIT 
 
 
-//Global("TalkedToSolar","GLOBAL",6)->Finished Last Conversation, Melissan's plan revealed.
-//Global("TalkedToSolar","GLOBAL",5)->Balthazar alone remains.
-//Global("TalkedToSolar","GLOBAL",4)->Revealed that <CHARNAME> is to stop the prophecy.
-//Global("TalkedToSolar","GLOBAL",3)->Past Revealed 
-//Anything before is building up to past revealed or initial conversation.
 
 EXTEND_BOTTOM HGWRA01 18
 IF ~Global("NaliaRomanceActive","GLOBAL",2) InParty("Nalia") See("Nalia")~ EXTERN HGWRA01 NaliaWraith1
@@ -1411,12 +1406,11 @@ COPY_TRANS SARVOLO 30
 
 // non-romanced - adding in romance check
 
-A_T_T FINSOL01 27 ~!Global("NaliaRomanceActive","GLOBAL",2)!Global("PGNaliaRomanceActive","GLOBAL",2)~ DO 15
 
 
 // romanced, Nalia and PC talk before the choice
 
-EXTEND_BOTTOM FINSOL01 27
+EXTEND_BOTTOM NALIA25J 1
 IF ~IsValidForPartyDialogue("NALIA")OR(2)Global("NaliaRomanceActive","GLOBAL",2)Global("PGNaliaRomanceActive","GLOBAL",2)Global("NaliaSolarPers","GLOBAL",0)~ DO ~SetGlobal("NaliaSolarPers","GLOBAL",1)~ EXTERN Nalia25J NALIASolarPers
 END
 
@@ -1424,7 +1418,7 @@ CHAIN NALIA25J NALIASolarPers
 @88
 END
 ++ @89 + FinalChoice.1
-++ 67971 + FinalChoice.1
+++ @795 + FinalChoice.1
 +~Global("NaliaRomanceActive","GLOBAL",2)~+ @90 + FinalChoice.2A
 +~!Global("NaliaRomanceActive","GLOBAL",2)PartyHasItem("X3RingN")~+ @91 + FinalChoice.2B
 +~!Global("NaliaRomanceActive","GLOBAL",2)!PartyHasItem("X3RingN")~+ @91 + FinalChoice.2C
@@ -1462,7 +1456,7 @@ EXTERN NALIA25J FinalChoice.Final
 
 CHAIN NALIA25J FinalChoice.Final 
 @100
-COPY_TRANS FINSOL01 27
+COPY_TRANS NALIA25J 2
 
 // romanced, PC chooses to leave
 
@@ -2094,7 +2088,7 @@ SAY @54
 + ~HPPercentLT("Nalia",50)~ + @663  + how4
 + ~Global("X3DisableFlirts","LOCALS",0)~ + @670 DO ~SetGlobal("X3DisableFlirts","LOCALS",1)~ + noflirt
 + ~Global("X3DisableFlirts","LOCALS",1)~ + @671 DO ~SetGlobal("X3DisableFlirts","LOCALS",0)~ + yesflirt
-++ @672 + breakup
++~!AreaCheck("AR6200")~+ @672 + breakup
 ++ @55 EXIT 
 END 
 

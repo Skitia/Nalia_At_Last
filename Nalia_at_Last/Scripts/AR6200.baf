@@ -1,19 +1,30 @@
+//Kill the old Nalia Bio. There's a risk it will still play, so we're turning it off entirely.
+
+IF 
+OR(2)
+Global("NaliaRomanceActive","GLOBAL",2)
+Global("PGNaliaRomanceActive","GLOBAL",2)
+Global("NaliaBio","GLOBAL",0)
+THEN RESPONSE #100
+SetGlobal("NaliaBio","GLOBAL",1)
+END 
+
 //Nalia Romance: Romance Ascended
 IF
 Global("StartEndBios","AR6200",1)
 InParty("NALIA")
 Global("NaliaRomanceActive","GLOBAL",2)
 Global("PlayerChoseEssence","GLOBAL",1)
-Global("NaliaBio","GLOBAL",0)
+Global("X3NaliaBio","GLOBAL",0)
 THEN
 RESPONSE #100
-SetGlobal("NaliaBio","GLOBAL",1)
+SetGlobal("X3NaliaBio","GLOBAL",1)
 TextScreen("NALIAMA")
 SmallWait(1)
 Continue()
 END
 
-//Romance Stayed Default
+//Romance Stayed 1
 IF
 Global("StartEndBios","AR6200",1)
 InParty("NALIA")
@@ -23,16 +34,16 @@ Global("NaliaRomanceActive","GLOBAL",2)
 !Global("PlayerChoseEssence","GLOBAL",1)
 !Global("X3NaliaCandleKeep","GLOBAL",1)
 !Global("X3NaliaRuleTogether","GLOBAL",1)
-Global("NaliaBio","GLOBAL",0)
+Global("X3NaliaBio","GLOBAL",0)
 THEN
 RESPONSE #100
-SetGlobal("NaliaBio","GLOBAL",1)
+SetGlobal("X3NaliaBio","GLOBAL",1)
 TextScreen("NALIARD")
 SmallWait(1)
 Continue()
 END
 
-//Romance Stayed Default
+//Romance Stayed 2
 IF
 Global("StartEndBios","AR6200",1)
 InParty("NALIA")
@@ -41,16 +52,16 @@ Global("PGNaliaRomanceActive","GLOBAL",2)
 Global("NaliaRomanceActive","GLOBAL",2)
 !Global("PlayerChoseEssence","GLOBAL",1)
 Global("X3NaliaCandleKeep","GLOBAL",1)
-Global("NaliaBio","GLOBAL",0)
+Global("X3NaliaBio","GLOBAL",0)
 THEN
 RESPONSE #100
-SetGlobal("NaliaBio","GLOBAL",1)
+SetGlobal("X3NaliaBio","GLOBAL",1)
 TextScreen("NALIARC")
 SmallWait(1)
 Continue()
 END
 
-//Romance Stayed Default
+//Romance Stayed 3
 IF
 Global("StartEndBios","AR6200",1)
 InParty("NALIA")
@@ -58,11 +69,11 @@ OR(2)
 Global("PGNaliaRomanceActive","GLOBAL",2)
 Global("NaliaRomanceActive","GLOBAL",2)
 !Global("PlayerChoseEssence","GLOBAL",1)
-!Global("X3NaliaRuleTogether","GLOBAL",1)
-Global("NaliaBio","GLOBAL",0)
+Global("X3NaliaRuleTogether","GLOBAL",1)
+Global("X3NaliaBio","GLOBAL",0)
 THEN
 RESPONSE #100
-SetGlobal("NaliaBio","GLOBAL",1)
+SetGlobal("X3NaliaBio","GLOBAL",1)
 TextScreen("NALIART")
 SmallWait(1)
 Continue()
@@ -75,10 +86,10 @@ Global("StartEndBios","AR6200",1)
 InParty("NALIA")
 Global("PGNaliaRomanceActive","GLOBAL",2)
 Global("PlayerChoseEssence","GLOBAL",1)
-Global("NaliaBio","GLOBAL",0)
+Global("X3NaliaBio","GLOBAL",0)
 THEN
 RESPONSE #100
-SetGlobal("NaliaBio","GLOBAL",1)
+SetGlobal("X3NaliaBio","GLOBAL",1)
 TextScreen("NALIADA")
 SmallWait(1)
 Continue()

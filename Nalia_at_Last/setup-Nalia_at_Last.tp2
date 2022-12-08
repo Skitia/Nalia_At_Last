@@ -1,4 +1,4 @@
-BACKUP ~tobNalia\Backup~
+BACKUP ~Nalia_at_Last\Backup~
 AUTHOR ~Skitia https://skitias-stories.com/contact.php~
 VERSION ~Beta~
 README ~Nalia_at_Last/Nalia_at_Last-readme.txt~
@@ -68,19 +68,19 @@ USING   ~%MOD_FOLDER%/tra/%s/FATESP.tra~
 
 //New Epilogues
 COPY_EXISTING ~NALIAND.2DA~ ~override/NALIARD.2da~
-REPLACE ~99999~ @3
+REPLACE ~73918~ @3
 
 COPY_EXISTING ~NALIAND.2DA~ ~override/NALIAMA.2da~
-REPLACE ~99999~ @4
+REPLACE ~73918~ @4
 
 COPY_EXISTING ~NALIAND.2DA~ ~override/NALIARC.2da~
-REPLACE ~99999~ @5
+REPLACE ~73918~ @5
 
 COPY_EXISTING ~NALIAND.2DA~ ~override/NALIADA.2da~
-REPLACE ~99999~ @6
+REPLACE ~73918~ @6
 
 COPY_EXISTING ~NALIAND.2DA~ ~override/NALIART.2da~
-REPLACE ~99999~ @7
+REPLACE ~73918~ @7
 
 
 //Scripts 
