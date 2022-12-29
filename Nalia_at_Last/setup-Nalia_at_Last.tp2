@@ -1,6 +1,6 @@
 BACKUP ~Nalia_at_Last\Backup~
 AUTHOR ~Skitia https://skitias-stories.com/contact.php~
-VERSION ~V1.05~
+VERSION ~Beta~
 README ~Nalia_at_Last/Nalia_at_Last-readme.txt~
 AUTO_TRA ~%MOD_FOLDER%/Tra/%s~
 
@@ -37,6 +37,21 @@ ALWAYS
     INCLUDE ~%MOD_FOLDER%/lib/ids.tph~
     CLEAR_IDS_MAP
   END
+  /* Language conversion - code from Lava. */
+   // No exception, everything needs to be converted
+  ACTION_DEFINE_ARRAY tra#noconvert BEGIN END
+
+  // any tra files used in LANGUAGE need to be reloaded after UTF-8 conversion
+  ACTION_DEFINE_ARRAY tra#reload BEGIN setup END
+
+  LAF HANDLE_CHARSETS
+  INT_VAR
+    infer_charsets = 1
+  STR_VAR
+    tra_path = EVAL ~%MOD_FOLDER%/Tra~
+    noconvert_array = tra#noconvert
+    reload_array = tra#reload
+  END 
 
 END 
 
