@@ -1,6 +1,6 @@
 BACKUP ~Nalia_at_Last\Backup~
 AUTHOR ~Skitia https://skitias-stories.com/contact.php~
-VERSION ~1.06~
+VERSION ~1.07~
 README ~Nalia_at_Last/Nalia_at_Last-readme.txt~
 AUTO_TRA ~%MOD_FOLDER%/Tra/%s~
 
@@ -72,6 +72,13 @@ BEGIN @0
 	
 //Wraith Events 
 EXTEND_BOTTOM ~cut218g.bcs~ ~%MOD_FOLDER%/scripts/X3NW2.baf~
+
+COPY ~%MOD_FOLDER%/Cre/X3NLove.cre~ ~override/X3NLove.cre~
+  WRITE_ASCII 0x248 ~X3NLove~ #8  //override script
+  WRITE_ASCII 0x280 ~X3NLove~ #32  //DV
+  WRITE_ASCII 0x2cc ~X3NLove~ #8   // Dialogue 
+  SAY NAME1 @10
+  SAY NAME2 @10
 
 //Cutscenes
 COMPILE	EVALUATE_BUFFER 
