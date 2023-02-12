@@ -1,0 +1,34 @@
+@0 = ~Nalia at Last: A ToB Romance MoD.~
+//SkitiaNPCs CrossMod
+@1 = ~Nalia's Engagement Ring~
+@2  = ~Weaved in gold and with a heart signet, you gave this ring to Nalia as a token of your love to her.
+The ring's enchantments have taken affect with its wearer's acceptance, and they will surely help to keep Nalia safer for the battles to come.
+
+STATISTICS:
+
+Equipped abilities:
+-Regenerates one hitpoint every six seconds 
+-Armor Class: +2
+-Save vs. Death: +3
+-Wizard Spell Durations are 50% longer
+
+Weight: 1~
+/* Epilogues */ 
+//Default Romance Ending
+@3 = ~After the events of the Bhaalspawn Saga, Nalia and <CHARNAME> traveled for a time, exploring all across the realms, finding lost magical tomes and reuinting with old friends they made on their journeys. In time however, Nalia became with child, and made the trek back to her childhoom home. There, she was welcomed with opened arms, and embraced as its ruler and their new heir. But Nalia and <CHARNAME> found the keep too small for their ambitions, and constantly traveled to adventure and fight for the greater good. Eventually, they left the keep's responsiblities to their child, and they were never seen in the De'Arnise lands again. Some say that they were seen on the courts of kings and queens, counseling them to push for greater equality and fairness, while some say they adventured and flushed out threats before they could harm the innocent. Whatever the truth, Nalia and <CHARNAME> were never seperated, not even in death, where they were entombed next to eachother and joined in the earth for eternity.~
+
+//Married, Ascended
+@4 = ~After <CHARNAME>'s ascension, Nalia initially grieved over the loss of her husband, and poured her pain into increasing her power and learning magical lore and making influential friends. After a year, she returned to Amn and her family home of de'Arnise Keep. She found it in the control of none other than Isaea Roenall, but she was no longer the wayward child that he expected and single-handedly brought him to justice for his indiscretions. She declared herself the inheritor of her father's ducal title, becoming a beloved ruler, respected archmage, and eventually earning a seat on the Council of Six itself. She would become a prominent figure in Amn for many years, constantly fighting for the good of the common folk and making many frustrated enemies among the nobility and Cowled Wizards both. She would never wed again, but on the grounds of the De'Arnise estate one can make out a statue to her only love.~
+//
+//Candlekeep Ending
+@5 = ~After the events of the Bhaalspawn Saga, Nalia and <CHARNAME> made one last venture before returning to the De'Arnise Keep, back to <CHARNAME>'s home, Candlekeep. While giving Gorion a proper burial, Nalia found inspiration within its library, with books on fair rulership that she believed could address the inequality in Amn. She brought what she learned back to the Keep, balancing responsibilties as a ruler and a few months later, a mother. Eventually she even managed to gain a seat on the Council of Six, and used it to push inspiring reform to Amn, and the land and the kingdom's neighbors took on some of her changes, but she never got to see the glory of her fruits. She was assassinated by a killer paid bountiful by the Roenalls. The Roenalls were ousted and executed, and her child, led by <CHARNAME>'s guidance, saw to a brighter future for all the realms.~
+
+//De'Arnise/ToB Romance Ascended 
+@6 = ~After <CHARNAME>'s ascension, Nalia initially grieved over the loss of her beloved. She traveled for a time, filling the pain into time spent learning magical lore and making influential friends. After a year, she returned to Amn and her family home of de'Arnise Keep. She found it in the control of none other than Isaea Roenall, but she was no longer the wayward child that he expected and single-handedly brought him to justice for his indiscretions. She declared herself the inheritor of her father's ducal title, becoming a beloved ruler, respected archmage, and eventually earning a seat on the Council of Six itself. She would become a prominent figure in Amn for many years, constantly fighting for the good of the common folk and making many frustrated enemies among the nobility and Cowled Wizards both. She never married, but on the grounds of the De'Arnise estate one can make out a statue to her only love.~
+
+//Rule Together Ending 
+@7 = ~After the events of the Bhaalspawn Saga, Nalia and <CHARNAME> headed immediately back to the Keep, where they were accepted with open arms. With <CHARNAME>'s love and support, Nalia became a beloved ruler, and eventually mother of one, and then two. The Keep's prosperity did not go unnoticed, however. The Roenalls were ever conspiring, and attempted one last takeover, kidnapping Nalia's children to use as leverage. The battle was so horrible one-sided with Nalia and <CHARNAME>'s combined power that they abdicated their lands and the children both to Nalia and <CHARNAME> and fled. The Council of Six took notice, and for the first time, appointed two people to a joint seat. Together, they would push change to Amn that would introduce prosperity and greater equality to the land. After fifty years of guiding the land, they quietly retired and handed responsiblity to their children, before dissapearing from the public eye ever since.~
+
+@8 = ~Romance Theme Music~
+@9 = ~Nalia At Last: Romance Theme Soundtrack~
+@10 = ~Lord De'Arnise~
