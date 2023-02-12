@@ -1223,7 +1223,7 @@ EXIT
 
 
 EXTEND_BOTTOM HGWRA01 18
-IF ~Global("NaliaRomanceActive","GLOBAL",2) InParty("Nalia") See("Nalia")~ EXTERN HGWRA01 NaliaWraith1
+IF ~OR(2)Global("NaliaRomanceActive","GLOBAL",2)Global("PGNaliaRomanceActive","GLOBAL",2) InParty("Nalia") See("Nalia")~ EXTERN HGWRA01 NaliaWraith1
 END
 
 CHAIN HGWRA01 NaliaWraith1
