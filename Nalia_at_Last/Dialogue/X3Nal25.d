@@ -1251,6 +1251,7 @@ DO ~SetGlobal("NaliaWraithSpirit1","GLOBAL",1)~
 == Nalia25J @9
 == X3NLOVE @10
 == Nalia25J @11
+DO ~SetGlobal("PGNaliaLove","GLOBAL",6)~
 END 
 ++ @12 EXTERN HGWRA01 25
 ++ @13 EXTERN HGWRA01 25
