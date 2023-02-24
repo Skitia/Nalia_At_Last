@@ -1209,6 +1209,7 @@ EXIT
 
 CHAIN IF ~Global("PGNaliaLove","GLOBAL",18)~ THEN NALIA25J Lovetalk9
 @586
+DO ~IncrementGlobal("PGNaliaLove","GLOBAL",1)~
 = @587
 END 
 ++ @588 + L9.1
