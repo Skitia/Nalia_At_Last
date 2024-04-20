@@ -162,7 +162,7 @@ EXIT
 CHAIN NALIA25J F3.9B 
 @162
 = @160
-DO ~SetGlobal("PGNaliaRomanceActove","GLOBAL",1)~
+DO ~SetGlobal("PGNaliaRomanceActive","GLOBAL",1)~
 EXIT 
 
 CHAIN NALIA25J F3.10
