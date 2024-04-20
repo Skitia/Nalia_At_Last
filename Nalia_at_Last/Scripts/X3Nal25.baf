@@ -352,7 +352,7 @@ END
 //Final Friendship Talk
 IF 
 	GlobalGT("TalkedToSolar","GLOBAL",5)
-	Global("PGNaliaRomanceActive","GLOBAL",2)	
+	!Global("PGNaliaRomanceActive","GLOBAL",2)	
     IsValidForPartyDialogue(Myself)
 	IsValidForPartyDialogue(Player1)
     See(Player1)
