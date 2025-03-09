@@ -59,10 +59,14 @@ END
 LANGUAGE ~English~
          ~English~
          ~%MOD_FOLDER%/Tra/English/setup.tra~
-LANGUAGE 		 
-         ~Russian (Translation by Jericho2)~
+
+LANGUAGE ~Russian (Translation by Jericho2)~
          ~Russian~
-         ~%MOD_FOLDER%/Tra/Russian/setup.tra~	
+         ~%MOD_FOLDER%/Tra/Russian/setup.tra~
+
+LANGUAGE ~French (Translation by Streen and Mornagest)~
+         ~French~
+         ~%MOD_FOLDER%/Tra/French/setup.tra~	
 
 
 
