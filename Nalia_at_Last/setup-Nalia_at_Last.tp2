@@ -125,7 +125,7 @@ SAY DESC @2
 	  timing = 2
 	  parameter2 = 11
 	  power = 1
-	  special = RESOLVE_STR_REF (9102)
+	  special = RESOLVE_STR_REF (#9102)
 	STR_VAR
 	  resource = NALIA
 END
