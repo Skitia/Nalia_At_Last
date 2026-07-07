@@ -39,7 +39,7 @@ ALWAYS
   END
   /* Language conversion - code from Lava. */
    // No exception, everything needs to be converted
-  ACTION_DEFINE_ARRAY tra#noconvert BEGIN END
+  ACTION_DEFINE_ARRAY tra#noconvert BEGIN install END
 
   // any tra files used in LANGUAGE need to be reloaded after UTF-8 conversion
   ACTION_DEFINE_ARRAY tra#reload BEGIN setup END
@@ -68,7 +68,10 @@ LANGUAGE ~French (Translation by Streen and Mornagest)~
          ~French~
          ~%MOD_FOLDER%/Tra/French/setup.tra~	
 
-
+LANGUAGE ~Simplified Chinese~
+         ~SChinese~
+         ~%MOD_FOLDER%/Tra/Schinese/install.tra~
+         ~%MOD_FOLDER%/Tra/Schinese/setup.tra~
 
 
 BEGIN @0
