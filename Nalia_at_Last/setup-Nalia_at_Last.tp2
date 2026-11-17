@@ -68,9 +68,7 @@ LANGUAGE ~French (Translation by Streen and Mornagest)~
          ~French~
          ~%MOD_FOLDER%/Tra/French/setup.tra~	
 
-LANGUAGE ~Schinese~
-         ~schinese~
-         ~%MOD_FOLDER%/Tra/Schinese/setup.tra~
+
 
 
 BEGIN @0
